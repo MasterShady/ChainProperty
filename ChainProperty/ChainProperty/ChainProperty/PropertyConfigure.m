@@ -144,6 +144,9 @@
     return ^(NSInteger fontsize){
         if([self.view respondsToSelector:@selector(setFont:)]){
             [self.view performSelector:@selector(setFont:) withObject:[UIFont systemFontOfSize:fontsize]];
+        }else if ([self.view isKindOfClass:[UIButton class]]){
+            UIButton *btn = self.view;
+            btn.titleLabel.font = [UIFont systemFontOfSize:fontsize];
         }
         return self;
     };
@@ -153,6 +156,9 @@
     return ^(UIFont *font){
         if([self.view respondsToSelector:@selector(setFont:)]){
             [self.view performSelector:@selector(setFont:) withObject:font];
+        }else if ([self.view isKindOfClass:[UIButton class]]){
+            UIButton *btn = self.view;
+            btn.titleLabel.font = font;
         }
         return self;
     };
