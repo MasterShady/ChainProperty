@@ -14,6 +14,7 @@
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wincompatible-pointer-types"
+#pragma clang diagnostic ignored "-Wincomplete-implementation"
 
 - (PropertyConfigure *(^)(BOOL ))hidden{
     return ^(BOOL hidden){
@@ -49,6 +50,15 @@
         return self;
     };
 }
+
+
+- (PropertyConfigure *(^)(BOOL))maskToBounds{
+    return ^(BOOL maskToBounds){
+        self.view.layer.masksToBounds = maskToBounds;
+        return self;
+    };
+}
+
 
 - (PropertyConfigure *(^)(CGFloat))left{
     return ^(CGFloat left){
@@ -142,12 +152,14 @@
 
 - (PropertyConfigure *(^)(NSInteger ))fontSize{
     return ^(NSInteger fontsize){
-        if([self.view respondsToSelector:@selector(setFont:)]){
-            [self.view performSelector:@selector(setFont:) withObject:[UIFont systemFontOfSize:fontsize]];
-        }else if ([self.view isKindOfClass:[UIButton class]]){
+        if ([self.view isKindOfClass:[UIButton class]]){
             UIButton *btn = self.view;
             btn.titleLabel.font = [UIFont systemFontOfSize:fontsize];
         }
+        else if([self.view respondsToSelector:@selector(setFont:)]){
+            [self.view performSelector:@selector(setFont:) withObject:[UIFont systemFontOfSize:fontsize]];
+        }
+        
         return self;
     };
 }
@@ -212,6 +224,24 @@
 }
 
 
+- (PropertyConfigure *(^)(id))image{
+    return ^(id  image){
+        if([self.view respondsToSelector:@selector(setImage:)]){
+            UIImage *image1;
+            if ([image isKindOfClass:[NSString class]]) {
+                image1 = [UIImage imageNamed:image];
+            }else if ([image isKindOfClass:[UIImage class]]){
+                image1 = image;
+            }else{
+                NSAssert(image, @"normalImg must be a image or string");
+            }
+            [self.view performSelector:@selector(setImage:) withObject:image1];
+        }
+        return self;
+    };
+}
+
+
 - (PropertyConfigure *(^)(id))normalImg{
     return ^(id  normalImg){
         if([self.view respondsToSelector:@selector(setImage:forState:)]){
@@ -264,6 +294,7 @@
         return self;
     };
 }
+
 
 - (PropertyConfigure *(^)(BOOL ))enable{
     return ^(BOOL enable){

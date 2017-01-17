@@ -33,6 +33,7 @@
 - (PropertyConfigure *(^)(CGFloat ))alpha;
 
 /** 子类的一些属性 */
+/** 子类的一些属性 */
 - (PropertyConfigure *(^)(NSString *))text;
 - (PropertyConfigure *(^)(NSInteger ))fontSize;
 - (PropertyConfigure *(^)(UIFont * ))font;
@@ -46,5 +47,6 @@
 - (PropertyConfigure *(^)(UIColor * ))normalTitleColor;
 - (PropertyConfigure *(^)(UIColor * ))selectedTitleColor;
 - (PropertyConfigure *(^)(BOOL ))enable;
+- (PropertyConfigure *(^)(id))image;
 
 @end
