@@ -8,7 +8,7 @@
 
 #import "PropertyConfigure.h"
 #import "NSObject+PerformSel.h"
-#import "UIView+Extension.h"
+#import "UIView+ChainProperty.h"
 
 @implementation PropertyConfigure
 

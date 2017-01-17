@@ -18,7 +18,6 @@
 		EB382A591DD32E9100A20401 /* NSObject+PerformSel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A521DD32E9100A20401 /* NSObject+PerformSel.m */; };
 		EB382A5A1DD32E9100A20401 /* PropertyConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A541DD32E9100A20401 /* PropertyConfigure.m */; };
 		EB382A5B1DD32E9100A20401 /* UIView+ChainProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A561DD32E9100A20401 /* UIView+ChainProperty.m */; };
-		EB382A5C1DD32E9100A20401 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A581DD32E9100A20401 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +60,6 @@
 		EB382A541DD32E9100A20401 /* PropertyConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyConfigure.m; sourceTree = "<group>"; };
 		EB382A551DD32E9100A20401 /* UIView+ChainProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainProperty.h"; sourceTree = "<group>"; };
 		EB382A561DD32E9100A20401 /* UIView+ChainProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChainProperty.m"; sourceTree = "<group>"; };
-		EB382A571DD32E9100A20401 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		EB382A581DD32E9100A20401 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +159,6 @@
 				EB382A541DD32E9100A20401 /* PropertyConfigure.m */,
 				EB382A551DD32E9100A20401 /* UIView+ChainProperty.h */,
 				EB382A561DD32E9100A20401 /* UIView+ChainProperty.m */,
-				EB382A571DD32E9100A20401 /* UIView+Extension.h */,
-				EB382A581DD32E9100A20401 /* UIView+Extension.m */,
 			);
 			path = ChainProperty;
 			sourceTree = "<group>";
@@ -305,7 +300,6 @@
 				EB382A251DD32E3E00A20401 /* ViewController.m in Sources */,
 				EB382A221DD32E3E00A20401 /* AppDelegate.m in Sources */,
 				EB382A591DD32E9100A20401 /* NSObject+PerformSel.m in Sources */,
-				EB382A5C1DD32E9100A20401 /* UIView+Extension.m in Sources */,
 				EB382A5B1DD32E9100A20401 /* UIView+ChainProperty.m in Sources */,
 				EB382A1F1DD32E3E00A20401 /* main.m in Sources */,
 				EB382A5A1DD32E9100A20401 /* PropertyConfigure.m in Sources */,
@@ -542,6 +536,7 @@
 				EB382A491DD32E3E00A20401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB382A4A1DD32E3E00A20401 /* Build configuration list for PBXNativeTarget "ChainPropertyTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +545,7 @@
 				EB382A4C1DD32E3E00A20401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB382A4D1DD32E3E00A20401 /* Build configuration list for PBXNativeTarget "ChainPropertyUITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +554,7 @@
 				EB382A4F1DD32E3E00A20401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
