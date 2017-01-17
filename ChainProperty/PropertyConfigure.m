@@ -60,33 +60,33 @@
 }
 
 
-//- (PropertyConfigure *(^)(CGFloat))left{
-//    return ^(CGFloat left){
-//        self.view.left = left;
-//        return self;
-//    };
-//}
-//
-//- (PropertyConfigure *(^)(CGFloat))right{
-//    return ^(CGFloat right){
-//        self.view.right = right;
-//        return self;
-//    };
-//}
-//
-//- (PropertyConfigure *(^)(CGFloat))top{
-//    return ^(CGFloat top){
-//        self.view.top = top;
-//        return self;
-//    };
-//}
-//
-//- (PropertyConfigure *(^)(CGFloat))bottom{
-//    return ^(CGFloat bottom){
-//        self.view.bottom = bottom;
-//        return self;
-//    };
-//}
+- (PropertyConfigure *(^)(CGFloat))left{
+    return ^(CGFloat left){
+        self.view.left = left;
+        return self;
+    };
+}
+
+- (PropertyConfigure *(^)(CGFloat))right{
+    return ^(CGFloat right){
+        self.view.right = right;
+        return self;
+    };
+}
+
+- (PropertyConfigure *(^)(CGFloat))top{
+    return ^(CGFloat top){
+        self.view.top = top;
+        return self;
+    };
+}
+
+- (PropertyConfigure *(^)(CGFloat))bottom{
+    return ^(CGFloat bottom){
+        self.view.bottom = bottom;
+        return self;
+    };
+}
 
 - (PropertyConfigure *(^)(CGRect))frame{
     return ^(CGRect frame){

@@ -20,10 +20,10 @@
 - (PropertyConfigure *(^)(UIColor *))borderColor;
 - (PropertyConfigure *(^)(CGFloat))borderWidth;
 - (PropertyConfigure *(^)(CGFloat))cornerRadius;
-//- (PropertyConfigure *(^)(CGFloat))left;
-//- (PropertyConfigure *(^)(CGFloat))right;
-//- (PropertyConfigure *(^)(CGFloat))top;
-//- (PropertyConfigure *(^)(CGFloat))bottom;
+- (PropertyConfigure *(^)(CGFloat))left;
+- (PropertyConfigure *(^)(CGFloat))right;
+- (PropertyConfigure *(^)(CGFloat))top;
+- (PropertyConfigure *(^)(CGFloat))bottom;
 - (PropertyConfigure *(^)(CGRect))frame;
 - (PropertyConfigure *(^)(BOOL))userInteractionEnabled;
 - (PropertyConfigure *(^)(NSInteger ))tag;
@@ -31,6 +31,7 @@
 - (PropertyConfigure *(^)(CGFloat))height;
 - (PropertyConfigure *(^)(CGSize ))size;
 - (PropertyConfigure *(^)(CGFloat ))alpha;
+- (PropertyConfigure *(^)(BOOL))maskToBounds;
 
 /** 子类的一些属性 */
 /** 子类的一些属性 */

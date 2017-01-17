@@ -1,12 +1,15 @@
-Pod::Spec.new do |spec|
-  spec.name         = 'ChainProperty'
-  spec.version      = '1.0.0'
-  spec.license      = 'MIT'
-  spec.homepage     = 'https://github.com/MasterShady/ChainProperty'
-  spec.authors      = { 'ShadyLew' => 'shady19920130@hotmail.com' }
-  spec.summary      =  'set common property by dot'
-  spec.source       = { :git => 'https://github.com/MasterShady/ChainProperty.git', :tag => 'v1.0.0’ }
-  spec.source_files = 'ChainProperty/ChainProperty/ChainProperty'
-  spec.requires_arc = true
-  spec.platform     = :ios
+
+Pod::Spec.new do |s|
+  s.name         = 'ChainProperty'
+  s.version      = '1.0.1'
+  s.summary      = 'no summary'
+  s.homepage     = 'https://github.com/MasterShady/ChainProperty'
+  s.license      = 'MIT'
+  s.platform     = :ios
+  s.author       = {'ShadyLew' => 'shady19920130@hotmail.com'}
+  s.ios.deployment_target = '8.0'
+  s.source       = {:git => 'https://github.com/MasterShady/ChainProperty.git', :tag => s.version}
+  s.source_files = 'ChainProperty/*.{h,m}'
+  s.requires_arc = true
+  s.frameworks   = 'UIKit'
 end

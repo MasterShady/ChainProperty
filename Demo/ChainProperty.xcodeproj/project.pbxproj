@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A0CB1094A5C4B9B79E68BB /* libPods-ChainProperty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF6BCC96FCA712DD483FB79 /* libPods-ChainProperty.a */; };
 		EB382A1F1DD32E3E00A20401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A1E1DD32E3E00A20401 /* main.m */; };
 		EB382A221DD32E3E00A20401 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A211DD32E3E00A20401 /* AppDelegate.m */; };
 		EB382A251DD32E3E00A20401 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A241DD32E3E00A20401 /* ViewController.m */; };
@@ -15,9 +16,9 @@
 		EB382A2D1DD32E3E00A20401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB382A2B1DD32E3E00A20401 /* LaunchScreen.storyboard */; };
 		EB382A381DD32E3E00A20401 /* ChainPropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A371DD32E3E00A20401 /* ChainPropertyTests.m */; };
 		EB382A431DD32E3E00A20401 /* ChainPropertyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB382A421DD32E3E00A20401 /* ChainPropertyUITests.m */; };
-		EB423F301E2DFFAA00A4B6D4 /* PropertyConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = EB423F2D1E2DFFAA00A4B6D4 /* PropertyConfigure.m */; };
-		EB423F311E2DFFAA00A4B6D4 /* UIView+ChainProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EB423F2F1E2DFFAA00A4B6D4 /* UIView+ChainProperty.m */; };
-		EB423F341E2E002200A4B6D4 /* NSObject+PerformSel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB423F321E2E002200A4B6D4 /* NSObject+PerformSel.m */; };
+		EB423F3E1E2E238300A4B6D4 /* NSObject+PerformSel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB423F391E2E238300A4B6D4 /* NSObject+PerformSel.m */; };
+		EB423F3F1E2E238300A4B6D4 /* PropertyConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = EB423F3B1E2E238300A4B6D4 /* PropertyConfigure.m */; };
+		EB423F401E2E238300A4B6D4 /* UIView+ChainProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EB423F3D1E2E238300A4B6D4 /* UIView+ChainProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AF6BCC96FCA712DD483FB79 /* libPods-ChainProperty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChainProperty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E231325CCDF99594A8B2CA42 /* Pods-ChainProperty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainProperty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChainProperty/Pods-ChainProperty.debug.xcconfig"; sourceTree = "<group>"; };
 		EB382A1A1DD32E3E00A20401 /* ChainProperty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainProperty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB382A1E1DD32E3E00A20401 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB382A201DD32E3E00A20401 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,12 +57,13 @@
 		EB382A3E1DD32E3E00A20401 /* ChainPropertyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainPropertyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB382A421DD32E3E00A20401 /* ChainPropertyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainPropertyUITests.m; sourceTree = "<group>"; };
 		EB382A441DD32E3E00A20401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB423F2C1E2DFFAA00A4B6D4 /* PropertyConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyConfigure.h; sourceTree = "<group>"; };
-		EB423F2D1E2DFFAA00A4B6D4 /* PropertyConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyConfigure.m; sourceTree = "<group>"; };
-		EB423F2E1E2DFFAA00A4B6D4 /* UIView+ChainProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainProperty.h"; sourceTree = "<group>"; };
-		EB423F2F1E2DFFAA00A4B6D4 /* UIView+ChainProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChainProperty.m"; sourceTree = "<group>"; };
-		EB423F321E2E002200A4B6D4 /* NSObject+PerformSel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSel.m"; sourceTree = "<group>"; };
-		EB423F331E2E002200A4B6D4 /* NSObject+PerformSel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSel.h"; sourceTree = "<group>"; };
+		EB423F381E2E238300A4B6D4 /* NSObject+PerformSel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSel.h"; sourceTree = "<group>"; };
+		EB423F391E2E238300A4B6D4 /* NSObject+PerformSel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSel.m"; sourceTree = "<group>"; };
+		EB423F3A1E2E238300A4B6D4 /* PropertyConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyConfigure.h; sourceTree = "<group>"; };
+		EB423F3B1E2E238300A4B6D4 /* PropertyConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyConfigure.m; sourceTree = "<group>"; };
+		EB423F3C1E2E238300A4B6D4 /* UIView+ChainProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainProperty.h"; sourceTree = "<group>"; };
+		EB423F3D1E2E238300A4B6D4 /* UIView+ChainProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChainProperty.m"; sourceTree = "<group>"; };
+		F3A48CEFB91F529A9F449445 /* Pods-ChainProperty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainProperty.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChainProperty/Pods-ChainProperty.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A0CB1094A5C4B9B79E68BB /* libPods-ChainProperty.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CE85E7D17258B27594C2B7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E231325CCDF99594A8B2CA42 /* Pods-ChainProperty.debug.xcconfig */,
+				F3A48CEFB91F529A9F449445 /* Pods-ChainProperty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB382A111DD32E3E00A20401 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +108,8 @@
 				EB382A361DD32E3E00A20401 /* ChainPropertyTests */,
 				EB382A411DD32E3E00A20401 /* ChainPropertyUITests */,
 				EB382A1B1DD32E3E00A20401 /* Products */,
+				1CE85E7D17258B27594C2B7A /* Pods */,
+				FCD989378FB4D791AEF3C9E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +126,7 @@
 		EB382A1C1DD32E3E00A20401 /* ChainProperty */ = {
 			isa = PBXGroup;
 			children = (
-				EB423F2B1E2DFFAA00A4B6D4 /* ChainProperty */,
+				EB423F371E2E238300A4B6D4 /* ChainProperty */,
 				EB382A201DD32E3E00A20401 /* AppDelegate.h */,
 				EB382A211DD32E3E00A20401 /* AppDelegate.m */,
 				EB382A231DD32E3E00A20401 /* ViewController.h */,
@@ -150,17 +166,26 @@
 			path = ChainPropertyUITests;
 			sourceTree = "<group>";
 		};
-		EB423F2B1E2DFFAA00A4B6D4 /* ChainProperty */ = {
+		EB423F371E2E238300A4B6D4 /* ChainProperty */ = {
 			isa = PBXGroup;
 			children = (
-				EB423F321E2E002200A4B6D4 /* NSObject+PerformSel.m */,
-				EB423F331E2E002200A4B6D4 /* NSObject+PerformSel.h */,
-				EB423F2C1E2DFFAA00A4B6D4 /* PropertyConfigure.h */,
-				EB423F2D1E2DFFAA00A4B6D4 /* PropertyConfigure.m */,
-				EB423F2E1E2DFFAA00A4B6D4 /* UIView+ChainProperty.h */,
-				EB423F2F1E2DFFAA00A4B6D4 /* UIView+ChainProperty.m */,
+				EB423F381E2E238300A4B6D4 /* NSObject+PerformSel.h */,
+				EB423F391E2E238300A4B6D4 /* NSObject+PerformSel.m */,
+				EB423F3A1E2E238300A4B6D4 /* PropertyConfigure.h */,
+				EB423F3B1E2E238300A4B6D4 /* PropertyConfigure.m */,
+				EB423F3C1E2E238300A4B6D4 /* UIView+ChainProperty.h */,
+				EB423F3D1E2E238300A4B6D4 /* UIView+ChainProperty.m */,
 			);
-			path = ChainProperty;
+			name = ChainProperty;
+			path = ../../ChainProperty;
+			sourceTree = "<group>";
+		};
+		FCD989378FB4D791AEF3C9E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AF6BCC96FCA712DD483FB79 /* libPods-ChainProperty.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB382A471DD32E3E00A20401 /* Build configuration list for PBXNativeTarget "ChainProperty" */;
 			buildPhases = (
+				F6BBBDD054D558849CD57380 /* [CP] Check Pods Manifest.lock */,
 				EB382A161DD32E3E00A20401 /* Sources */,
 				EB382A171DD32E3E00A20401 /* Frameworks */,
 				EB382A181DD32E3E00A20401 /* Resources */,
+				8B6047198B1F0F0045D5FD53 /* [CP] Embed Pods Frameworks */,
+				9DE4CC4637EF9F126B2155B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,17 +320,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B6047198B1F0F0045D5FD53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChainProperty/Pods-ChainProperty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE4CC4637EF9F126B2155B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChainProperty/Pods-ChainProperty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6BBBDD054D558849CD57380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB382A161DD32E3E00A20401 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EB382A251DD32E3E00A20401 /* ViewController.m in Sources */,
-				EB423F301E2DFFAA00A4B6D4 /* PropertyConfigure.m in Sources */,
 				EB382A221DD32E3E00A20401 /* AppDelegate.m in Sources */,
+				EB423F3E1E2E238300A4B6D4 /* NSObject+PerformSel.m in Sources */,
+				EB423F401E2E238300A4B6D4 /* UIView+ChainProperty.m in Sources */,
 				EB382A1F1DD32E3E00A20401 /* main.m in Sources */,
-				EB423F341E2E002200A4B6D4 /* NSObject+PerformSel.m in Sources */,
-				EB423F311E2DFFAA00A4B6D4 /* UIView+ChainProperty.m in Sources */,
+				EB423F3F1E2E238300A4B6D4 /* PropertyConfigure.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +525,7 @@
 		};
 		EB382A481DD32E3E00A20401 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E231325CCDF99594A8B2CA42 /* Pods-ChainProperty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 39VQ3U3DJL;
@@ -461,6 +538,7 @@
 		};
 		EB382A491DD32E3E00A20401 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A48CEFB91F529A9F449445 /* Pods-ChainProperty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 39VQ3U3DJL;

@@ -1,0 +1,16 @@
+target ‘ChainProperty’ do
+platform :ios, '7.0'
+#pod 'JTCalendar', '~> 2.0'
+#pod 'PureLayout'
+#pod 'pop'
+#pod 'IQKeyboardManager'
+##pod 'MJRefresh'
+#pod 'TTTAttributedLabel'
+#pod 'FMDB'
+pod 'FDFullscreenPopGesture', '1.1'
+#pod 'LCActionSheet'
+#pod 'HYBImageCliped', '~> 2.0.0'
+#pod 'UIView+FDCollapsibleConstraints', '~> 1.1'
+#pod 'SDWebImage', '~> 3.8'
+#pod 'Toast', '~>3.0'
+end
