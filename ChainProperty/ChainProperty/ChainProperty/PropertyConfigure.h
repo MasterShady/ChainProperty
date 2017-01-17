@@ -20,10 +20,10 @@
 - (PropertyConfigure *(^)(UIColor *))borderColor;
 - (PropertyConfigure *(^)(CGFloat))borderWidth;
 - (PropertyConfigure *(^)(CGFloat))cornerRadius;
-- (PropertyConfigure *(^)(CGFloat))left;
-- (PropertyConfigure *(^)(CGFloat))right;
-- (PropertyConfigure *(^)(CGFloat))top;
-- (PropertyConfigure *(^)(CGFloat))bottom;
+//- (PropertyConfigure *(^)(CGFloat))left;
+//- (PropertyConfigure *(^)(CGFloat))right;
+//- (PropertyConfigure *(^)(CGFloat))top;
+//- (PropertyConfigure *(^)(CGFloat))bottom;
 - (PropertyConfigure *(^)(CGRect))frame;
 - (PropertyConfigure *(^)(BOOL))userInteractionEnabled;
 - (PropertyConfigure *(^)(NSInteger ))tag;

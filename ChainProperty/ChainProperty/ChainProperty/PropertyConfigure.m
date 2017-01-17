@@ -60,33 +60,33 @@
 }
 
 
-- (PropertyConfigure *(^)(CGFloat))left{
-    return ^(CGFloat left){
-        self.view.left = left;
-        return self;
-    };
-}
-
-- (PropertyConfigure *(^)(CGFloat))right{
-    return ^(CGFloat right){
-        self.view.right = right;
-        return self;
-    };
-}
-
-- (PropertyConfigure *(^)(CGFloat))top{
-    return ^(CGFloat top){
-        self.view.top = top;
-        return self;
-    };
-}
-
-- (PropertyConfigure *(^)(CGFloat))bottom{
-    return ^(CGFloat bottom){
-        self.view.bottom = bottom;
-        return self;
-    };
-}
+//- (PropertyConfigure *(^)(CGFloat))left{
+//    return ^(CGFloat left){
+//        self.view.left = left;
+//        return self;
+//    };
+//}
+//
+//- (PropertyConfigure *(^)(CGFloat))right{
+//    return ^(CGFloat right){
+//        self.view.right = right;
+//        return self;
+//    };
+//}
+//
+//- (PropertyConfigure *(^)(CGFloat))top{
+//    return ^(CGFloat top){
+//        self.view.top = top;
+//        return self;
+//    };
+//}
+//
+//- (PropertyConfigure *(^)(CGFloat))bottom{
+//    return ^(CGFloat bottom){
+//        self.view.bottom = bottom;
+//        return self;
+//    };
+//}
 
 - (PropertyConfigure *(^)(CGRect))frame{
     return ^(CGRect frame){
@@ -232,8 +232,6 @@
                 image1 = [UIImage imageNamed:image];
             }else if ([image isKindOfClass:[UIImage class]]){
                 image1 = image;
-            }else{
-                NSAssert(image, @"normalImg must be a image or string");
             }
             [self.view performSelector:@selector(setImage:) withObject:image1];
         }
@@ -250,8 +248,6 @@
                 image = [UIImage imageNamed:normalImg];
             }else if ([normalImg isKindOfClass:[UIImage class]]){
                 image = normalImg;
-            }else{
-                NSAssert(normalImg, @"normalImg must be a image or string");
             }
             [self.view performSelector:@selector(setImage:forState:) withParameters:(__bridge void *)(image),UIControlStateNormal];
         }
