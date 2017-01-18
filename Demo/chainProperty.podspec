@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name         = 'ChainProperty'
   s.version      = '1.0.2'
-  s.summary      = 'no summary'
+  s.summary      = 'shortway to set properties of UIViews and its subClass by using doc'
   s.homepage     = 'https://github.com/MasterShady/ChainProperty'
   s.license      = 'MIT'
   s.platform     = :ios
