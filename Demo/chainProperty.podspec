@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'ChainProperty'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.summary      = 'no summary'
   s.homepage     = 'https://github.com/MasterShady/ChainProperty'
   s.license      = 'MIT'
