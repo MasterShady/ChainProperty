@@ -146,6 +146,9 @@
         if ([self.view respondsToSelector:@selector(setText:)]) {
             [self.view performSelector:@selector(setText:) withObject:text];
         }
+        if ([self.view isKindOfClass:[UIButton class]]) {
+            NSAssert(text, @"use normaltitle or ...");
+        }
         return self;
     };
 }
@@ -297,6 +300,82 @@
         if([self.view respondsToSelector:@selector(setEnable:)]){
             [self.view performSelector:@selector(setEnable:) withParameters:enable];
         }
+        return self;
+    };
+}
+
+- (PropertyConfigure *(^)(id))normalBackImg{
+    return ^(id  normalImg){
+        if([self.view respondsToSelector:@selector(setBackgroundImage:forState:)]){
+            UIImage *image;
+            if ([normalImg isKindOfClass:[NSString class]]) {
+                image = [UIImage imageNamed:normalImg];
+            }else if ([normalImg isKindOfClass:[UIImage class]]){
+                image = normalImg;
+            }else{
+                NSAssert(normalImg, @"normalImg must be a image or string");
+            }
+            [self.view performSelector:@selector(setBackgroundImage:forState:) withParameters:(__bridge void *)(image),UIControlStateNormal];
+        }
+        return self;
+    };
+}
+
+-(PropertyConfigure *(^)(id))selectedBackImg{
+    return ^(id  selectedBackImg){
+        if([self.view respondsToSelector:@selector(setBackgroundImage:forState:)]){
+            UIImage *image;
+            if ([selectedBackImg isKindOfClass:[NSString class]]) {
+                image = [UIImage imageNamed:selectedBackImg];
+            }else if ([selectedBackImg isKindOfClass:[UIImage class]]){
+                image = selectedBackImg;
+            }else{
+                NSAssert(selectedBackImg, @"normalImg must be a image or string");
+            }
+            [self.view performSelector:@selector(setBackgroundImage:forState:) withParameters:(__bridge void *)(image),UIControlStateSelected];
+        }
+        return self;
+    };
+}
+
+
+- (PropertyConfigure *(^)(id))hightLightImg{
+    return ^(id  hightLightImg){
+        if([self.view respondsToSelector:@selector(setImage:forState:)]){
+            UIImage *image;
+            if ([hightLightImg isKindOfClass:[NSString class]]) {
+                image = [UIImage imageNamed:hightLightImg];
+            }else if ([hightLightImg isKindOfClass:[UIImage class]]){
+                image = hightLightImg;
+            }else{
+                NSAssert(hightLightImg, @"hightLightImg must be a image or string");
+            }
+            [self.view performSelector:@selector(setImage:forState:) withParameters:(__bridge void *)(image),UIControlStateHighlighted];
+        }
+        return self;
+    };
+}
+
+- (PropertyConfigure *(^)(id))hightLightBackImg{
+    return ^(id  hightLightBackImg){
+        if([self.view respondsToSelector:@selector(setImage:forState:)]){
+            UIImage *image;
+            if ([hightLightBackImg isKindOfClass:[NSString class]]) {
+                image = [UIImage imageNamed:hightLightBackImg];
+            }else if ([hightLightBackImg isKindOfClass:[UIImage class]]){
+                image = hightLightBackImg;
+            }else{
+                NSAssert(hightLightBackImg, @"hightLightImg must be a image or string");
+            }
+            [self.view performSelector:@selector(setBackgroundImage:forState:) withParameters:(__bridge void *)(image),UIControlStateHighlighted];
+        }
+        return self;
+    };
+}
+
+-(PropertyConfigure *(^)(CGFloat))fontSizeAdjustScreen{
+    return ^(CGFloat fontSizeAdjustScreen){
+        self.fontSize(fontSizeAdjustScreen/375.0 *[UIScreen mainScreen].bounds.size.width);
         return self;
     };
 }

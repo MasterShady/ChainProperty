@@ -32,6 +32,7 @@
 - (PropertyConfigure *(^)(CGSize ))size;
 - (PropertyConfigure *(^)(CGFloat ))alpha;
 - (PropertyConfigure *(^)(BOOL))maskToBounds;
+- (PropertyConfigure *(^)(CGFloat))fontSizeAdjustScreen;
 
 /** 子类的一些属性 */
 /** 子类的一些属性 */
@@ -49,5 +50,13 @@
 - (PropertyConfigure *(^)(UIColor * ))selectedTitleColor;
 - (PropertyConfigure *(^)(BOOL ))enable;
 - (PropertyConfigure *(^)(id))image;
+- (PropertyConfigure *(^)(id))normalBackImg;
+- (PropertyConfigure *(^)(id))selectedBackImg;
+- (PropertyConfigure *(^)(id))hightLightImg;
+- (PropertyConfigure *(^)(id))hightLightBackImg;
+
+
+
+
 
 @end
